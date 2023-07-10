@@ -1,0 +1,10 @@
+@import url(variables.css);
+
+#home-top-flexbox{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: var(--width--elements--page);
+
+}
