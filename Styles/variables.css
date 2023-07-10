@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+:root{
+    /*colours*/
+    --color--black: rgb(0, 0, 0);
+    --gray: rgb(140, 140, 140);
+    --white: white;
+    --brand--color: rgb(215, 25, 32);
+
+    /* hover*/
+    --hover--color: var(--gray);
+    
+    /*font -size */
+    --font--size--xxs: 0.688rem;
+    --font--size--xs: 0.813rem;
+    --font--size--sm: 1rem;
+    --font--size--m: 1.25rem;
+    --font--size--xm: 1.625rem;
+    --font--size--subrayade: 1.75rem;
+    --font--size--tittle: 2.375rem;
+
+
+    /*width */
+    --width--elements--page: 78.75rem;
+
+
+    --padding--home-top-flexbox-left-article-left: 1vw;
+    --padding--home-top-flexbox-left-article-right: 1vw;
+
+
+    /*height */
+    --height--elements--page: 43.975rem;
+
+
+    /*margin*/
+    --margin-right-flexbox: 1vw;
+
+
+    /*  borders*/
+    --border: 1px solid var(--color--black);
+
+
+
+
+    /*gap*/
+
+    --gap--home-top-grid: 1vw;
+
+
+    /*Images width and height*/
+    
+
+
+}
