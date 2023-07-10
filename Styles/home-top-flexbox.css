@@ -1,10 +1,65 @@
 @import url(variables.css);
 
-#home-top-flexbox{
-    display: none;
-    align-items: center;
-    justify-content: space-between;
 
+
+#home-top-flexbox{
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
     max-width: var(--width--elements--page);
+
+}
+
+.home-top-flexbox-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex: 1;
+
+
+  
+
+
+    
+}
+
+.border-left{
+    border-left: 1px solid black;
+}
+
+.home-top-flexbox-article div:first-of-type{
+    align-self: flex-start;
+}
+
+.home-top-flexbox-article img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+
+
+.home-top-flexbox-article div:last-of-type{
+    align-self: flex-start;
+    text-align:left;
+    width: 90%;
+}
+
+.home-top-flexbox-article h3{
+    font-weight: normal;
+    font-size: var(--font--size--sm);
+}
+
+.home-top-flexbox-article p{
+    font-size: var(--font--size--xxs);
+    font-weight: bold;
+    text-decoration: underline;
 
 }
