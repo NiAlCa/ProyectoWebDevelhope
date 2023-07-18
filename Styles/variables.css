@@ -28,6 +28,7 @@
     --width--elements--page: 78.75rem;
 
 
+    
     --padding--home-top-flexbox-left-article-left: 1vw;
     --padding--home-top-flexbox-left-article-right: 1vw;
 
@@ -48,7 +49,7 @@
 
     /*gap*/
 
-    --gap--home-top-grid: 1vw;
+    --gap--home-top-flexbox: 1vw;
 
 
     /*Images width and height*/

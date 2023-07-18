@@ -1,0 +1,64 @@
+@import url(../variables.css);
+@import "../mixins.scss";
+
+
+
+#home-top-flexbox-row{
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+    @include flex(flex, default, nowrap, center, center);
+
+    
+    max-width: var(--width--elements--page);
+
+}
+
+.home-top-flexbox-row-article{
+    @include flex(flex, default, nowrap, center, center);
+    
+    padding: 10px;
+ 
+    flex: 1;
+    
+}
+
+.border-left{
+    border-left: 1px solid black;
+}
+
+
+.home-top-flexbox-row-article img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+
+
+.home-top-flexbox-row-article div:last-of-type{
+    align-self: flex-start;
+    text-align:left;
+    width: 90%;
+}
+
+.home-top-flexbox-row-article h3{
+    font-weight: normal;
+    font-size: var(--font--size--sm);
+}
+
+.home-top-flexbox-row-article p{
+    font-size: var(--font--size--xxs);
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+@media (max-width: 1180px){
+    .home-top-flexbox-row-article:last-of-type{
+        display: none;
+    }
+
+}
