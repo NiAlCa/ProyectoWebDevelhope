@@ -9,7 +9,7 @@
     border-bottom: 1px solid black;
     padding: 10px;
 
-    @include flex(flex, default, nowrap, center, center);
+    @include flex(flex, default, default, center, flex-start);
 
     
     max-width: var(--width--elements--page);
@@ -17,7 +17,7 @@
 }
 
 .home-top-flexbox-row-article{
-    @include flex(flex, default, nowrap, center, center);
+    @include flex(flex, default, default, center, flex-start);
     
     padding: 10px;
  
@@ -62,3 +62,35 @@
     }
 
 }
+
+@media (max-width: 768px){
+    #home-top-flexbox-row{
+        flex: auto;
+        overflow: scroll;
+        justify-content:flex-start;
+    }
+
+    #home-top-flexbox-row > div{
+        flex: 0 0 auto;
+        width: 40%;
+    }
+
+    
+
+    .border-left{
+        border: 0px solid black;
+    }
+
+    .home-top-flexbox-row-article:last-of-type{
+        display: flex;
+    }
+
+    .home-top-flexbox-row-article img{
+        width: 100px;
+        height: 100px;
+        
+    }
+
+
+}
+
