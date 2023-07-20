@@ -22,155 +22,167 @@ body{
 
     gap: var(--gap--home-top-flexbox);
     
-}
+
 
 /*fin div principal //////////////////////////////////////////////// */
 
 
 
 
-/*left article ///////////////////////////////////////////////////////////*/
+    /*left article ///////////////////////////////////////////////////////////*/
 
-#home-top-flexbox-left-flexbox{
-    flex: 1 1 auto;
+    #home-top-flexbox-left-flexbox{
+        flex: 1 1 auto;
+        
+
+        @include flex(flex, column, nowrap, space-around, default);
+        
+
+        padding-left: 3%;
+        padding-right: 3%;
+        border-left: var(--border);
+        border-right: var(--border);
+
+        .home-top-flexbox-left-flexbox-article{
+            @include flex(flex, column, nowrap, default, default);
+
+            
+
+            padding-left: var(--padding--home-top-flexbox-row-row-row-row-left-article-left);
+            padding-right: var(--padding--home-top-flexbox-row-row-row-row-left-article-right);
+
+            p:first-child{
+        
+
+                font-size: var(--font--size--xxs);
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            h3{
+                font-size: var(--font--size--sm);
+            }
+
+            h3 + p{
+                font-size: var(--font--size--xs);
+            }
+
+            p:last-child{
+                font-size: var(--font--size--xs);
+            }
+
+        }
+        
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*cente rarticle */
+
+
+
+    #home-top-flexbox-center-flexbox{
+        flex: 1 1 200rem;
+
+        @include flex(flex, column, nowrap, center, center);
+
     
+        text-align: center;
 
-    @include flex(flex, column, nowrap, space-around, default);
+        img {
+        
+            width: 90%;
+            
+        }
+
+        p:first-of-type{
+            position: absolute;
+            margin-top: 300px;
+        
+            font-size: var(--font--size--subrayade);
+            background-color: var(--white);
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+        
+        h3{
+            margin-top: 20px;
+            font-size: var(--font--size--tittle);
+        
+        
+        }
+
+        p:nth-of-type(2){
+            width: 80%;
+        }
+        
+        :last-child{
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+
+
+
+
+    /*center article end ////////////////////////////////////////////////////////*/
+
+
+
+    #home-top-flexbox-right-flexbox{
+        flex: 1 1 auto;
     
+        @include flex(flex, column, nowrap, space-around, center);
 
-    padding-left: 3%;
-    padding-right: 3%;
-    border-left: var(--border);
-    border-right: var(--border);
-    
-    
-}
+        img {
+            width: 100%;
+        }
 
-.home-top-flexbox-left-flexbox-article{
-    @include flex(flex, column, nowrap, default, default);
+        p:first-of-type{
+            margin-top: var(--margin--articles);
+            margin-bottom: var(--margin--articles);
+        
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: var(--font--size--xs);
+        }
 
-    
+        hr{
+            height: 100;
+        width: 100%;
+        color: black;
+        border-style: solid;
+        }
+        
+        h3{
+            font-size: var(--font--size--m);
+        
+        }
 
-    padding-left: var(--padding--home-top-flexbox-row-row-row-row-left-article-left);
-    padding-right: var(--padding--home-top-flexbox-row-row-row-row-left-article-right);
-
-}
-
-.home-top-flexbox-left-flexbox-article p:first-child{
- 
-
-    font-size: var(--font--size--xxs);
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.home-top-flexbox-left-flexbox-article h3{
-    font-size: var(--font--size--sm);
-}
-
-.home-top-flexbox-left-flexbox-article h3 + p{
-    font-size: var(--font--size--xs);
-}
-
-.home-top-flexbox-left-flexbox-article p:last-child{
-    font-size: var(--font--size--xs);
-}
+        p:last-child{
+            font-size: var(--font--size--xs);
+            margin-top: 5px;
+        }
+        
 
 
-/*left article end ////////////////////////////////////////////////////////*/
-
-/*cente rarticle */
-
-
-
-#home-top-flexbox-center-flexbox{
-    flex: 1 1 200rem;
-
-    @include flex(flex, column, nowrap, center, center);
-
-   
-    text-align: center;
-}
-
-#home-top-flexbox-center-flexbox img {
-    
-    width: 90%;
-    
-}
-
-#home-top-flexbox-center-flexbox p:first-of-type{
-    position: absolute;
-    margin-top: 300px;
-
-    font-size: var(--font--size--subrayade);
-    background-color: var(--white);
-    text-decoration: underline;
-    text-decoration-style: double;
-}
-
-#home-top-flexbox-center-flexbox h3{
-    margin-top: 20px;
-    font-size: var(--font--size--tittle);
+    }
 
 
 }
 
-#home-top-flexbox-center-flexbox p:nth-of-type(2){
-    width: 80%;
-}
-
-#home-top-flexbox-center-flexbox:last-child{
-    margin-top: 10px;
-}
-
-
-
-
-
-
-/*center article end ////////////////////////////////////////////////////////*/
-
-
-
-#home-top-flexbox-right-flexbox{
-    flex: 1 1 auto;
-   
-    @include flex(flex, column, nowrap, space-around, center);
-
-
-}
-
-
-
-
-#home-top-flexbox-right-flexbox img {
-    width: 100%;
-}
-
-#home-top-flexbox-right-flexbox p:first-of-type{
-    margin-top: var(--margin--articles);
-    margin-bottom: var(--margin--articles);
-
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: var(--font--size--xs);
-}
-#home-top-flexbox-right-flexbox hr{
-    height: 100;
-  width: 100%;
-  color: black;
-  border-style: solid;
-}
-
-#home-top-flexbox-right-flexbox h3{
-    font-size: var(--font--size--m);
-  
-}
-
-#home-top-flexbox-right-flexbox p:last-child{
-    font-size: var(--font--size--xs);
-    margin-top: 5px;
-}
 
 
 
@@ -180,19 +192,21 @@ body{
 
     #home-top-flexbox{
         @include flex(flex, column, wrap, flex-start, default);
-    }
-        /* div principal fiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiin */
+
+           /*left article */
+
+           #home-top-flexbox-left-flexbox{
+            order: 3; 
+            border: none;
+             
+         }
+ 
+         /* article central */
+
+         
 
 
-        /*left article */
-
-        #home-top-flexbox-left-flexbox{
-           order: 3; 
-           border: none;
-            
-        }
-
-        /* article central */
+     
 
     #home-top-flexbox-center-flexbox{
         flex-basis: auto;
@@ -200,15 +214,24 @@ body{
 
 
     }
-      /* article central fiiiiiiiiiiiin*/
 
-      #home-top-flexbox-right-flexbox{
-      order: 2;
+    #home-top-flexbox-right-flexbox{
+        order: 2;
+      
+        hr{
+            display: none;
+            }
+
+      }
     
-    }
 
-    #home-top-flexbox-right-flexbox hr{
-    display: none;
+
+
     }
+      
+
+      
+
+ 
  
 }
